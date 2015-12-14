@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../urapvr/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  <title>A.P. Vijay Rengarajan | Illumination Robust Change Detection with CMOS Imaging Sensors</title>
+</head>
+
+<body>
+  <div id="page">
+      <h1><center>Illumination Robust Change Detection with CMOS Imaging Sensors</center></h1>
+<br><br>
+
+  <sec-title>Abstract</sec-title>
+    <sec-contents>
+      <p>
+Change detection between two images in the presence of degradations is
+an important problem in the computer vision community, more so for the
+aerial scenario which is particularly challenging. Cameras mounted on
+moving platforms such as aircrafts or drones are subject to general
+six-dimensional motion as the motion is not restricted to a single
+plane. With CMOS cameras increasingly in vogue due to their low power
+consumption, the inevitability of rolling-shutter (RS) effect adds to
+the challenge.  This is caused by sequential exposure of rows in CMOS
+cameras unlike conventional global shutter cameras where all pixels
+are exposed simultaneously. The RS effect is particularly pronounced
+in aerial imaging since each row of the imaging sensor is likely to
+experience a different motion. For fast- moving platforms, the problem
+is further compounded since the rows are also affected by motion blur.
+Moreover, since the two images are shot at different times,
+illumination differences are common. In this paper, we propose a
+unified computational framework that elegantly exploits the sparsity
+constraint to deal with the problem of change detection in images
+degraded by RS effect, motion blur as well as non-global illumination
+differences. We formulate an optimization problem where each row of
+the distorted image is approximated as a weighted sum of the
+corresponding rows in warped versions of the reference image due to
+camera motion within the exposure period to account for geometric as
+well as photometric differences. The method has been validated on both
+synthetic and real data.
+      </p><br><br>
+    </sec-contents>
+
+    <sec-contents></sec-contents>
+
+
+  <sec-title>Publication</sec-title>
+        <sec-contents>
+          <p><b>Illumination Robust Change Detection with CMOS Imaging Sensors</b><br>
+          <i><i>Vijay Rengarajan</i>, Sheetal B. Gupta, <a class="name" href="http://www.ee.iitm.ac.in/~raju">A.N. Rajagopalan</a>, and <a class="name" href="http://www.cacs.louisiana.edu/~guna/">Guna Seetharaman</a><br><i>SPIE Defense + Security Symposium,</i> International Society for Optics and Photonics</i>, Baltimore, Maryland, USA <br>April 2015<br>
+         <a href="../pdf/2015_spie.pdf">Paper</a> (6.1MB)<br>
+         <a href="../pdf/2015_spie_present.pdf">Slides</a> (3.1MB)
+          </p><br><br>
+        </sec-contents>
+
+
+<sec-contents></sec-contents>
+
+<sec-title>bibTeX</sec-title>
+<sec-contents>
+<code>
+@proceeding{ rengarajan:2015:illumination,<br>
+author = {Rengarajan, Vijay and Gupta, Sheetal B. and Rajagopalan, A. N. and Seetharaman, Guna},<br>
+title = {Illumination robust change detection with CMOS imaging sensors},<br>
+journal = {Proc. SPIE},<br>
+volume = {9473},<br>
+number = {},<br>
+pages = {947303-947303-9},<br>
+year = {2015},<br>
+doi = {10.1117/12.2176816},<br>
+URL = {http://dx.doi.org/10.1117/12.2176816},<br>
+}
+</code><br><br><br>
+</sec-contents>
+
+<sec-contents></sec-contents>
+<sec-contents></sec-contents>
+
+<sec-title>Results</sec-title>
+<sec-contents><p>Given a reference image and an RSMB image of the same scene but with a different illumination, we estimate the row-wise camera motion between the two images and the multiplicative illumination factors to register them, and simultaneously detect the regions of changes between them. </p>
+
+<table class="table_of_img_result">
+<tr>
+<td><img id="img_in_table_result" src="img/rsmbi_eg1.png"></td>
+</tr>
+</table><br><br><br>
+</sec-contents>
+<br><br><br>
+
+<sec-contents></sec-contents>
+<sec-contents></sec-contents>
+  <sec-title>Related publication</sec-title>
+        <sec-contents>
+          <b>Change Detection in the Presence of Motion Blur and Rolling Shutter Effect</b>
+          <p><i>Vijay Rengarajan</i>, <a class="name" href="http://www.ee.iitm.ac.in/~raju">A.N. Rajagopalan</a>, and <a class="name" href="http://www.ee.iitm.ac.in/user/aravind/">R. Aravind</a><br><i>European Conference on Computer Vision (ECCV),</i> Zurich, Switzerland <br>September 2014 <a href="../pdf/2014_eccv.pdf">[PDF]</a> <a href="../change_rsmb">[Project page]</a>
+          </p><br><br><br>
+        </sec-contents>
+
+  </div>
+</body>
+</html>
